@@ -7,7 +7,7 @@ public class Arquivo implements Serializable {
 	private static final long serialVersionUID = 8077295408159335912L;
 	
 	private String nome;
-	private String path;
+	private Diretorio diretorio;
 	private long tamanho;
 
 	public String getNome() {
@@ -26,12 +26,12 @@ public class Arquivo implements Serializable {
 		this.tamanho = tamanho;
 	}
 
-	public String getPath() {
-		return path;
+	public Diretorio getDiretorio() {
+		return diretorio;
 	}
 
-	public void setPath(String path) {
-		this.path = path;
+	public void setDiretorio(Diretorio diretorio) {
+		this.diretorio = diretorio;
 	}
 	
 	@Override
