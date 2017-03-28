@@ -9,6 +9,7 @@ public class Arquivo implements Serializable {
 	private String nome;
 	private Diretorio diretorio;
 	private long tamanho;
+	private String hash;
 
 	public String getNome() {
 		return nome;
@@ -32,6 +33,14 @@ public class Arquivo implements Serializable {
 
 	public void setDiretorio(Diretorio diretorio) {
 		this.diretorio = diretorio;
+	}
+
+	public String getHash() {
+		return hash;
+	}
+
+	public void setHash(String hash) {
+		this.hash = hash;
 	}
 	
 	@Override
